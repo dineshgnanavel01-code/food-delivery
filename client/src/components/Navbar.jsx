@@ -125,10 +125,18 @@ export default function Navbar() {
 
           <Link
             href="/restaurants"
-            className="flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-2 text-sm text-muted-foreground hover:border-emerald/40 transition-colors"
+            className="hidden lg:flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-2 text-sm text-muted-foreground hover:border-emerald/40 transition-colors"
             aria-label="Search food and restaurants">
             <FiSearch className="h-4 w-4 text-emerald" />
             <span className="hidden xl:inline">Search food & restaurants…</span>
+          </Link>
+
+          {/* Compact search icon for small screens (between desktop pill and theme toggle) */}
+          <Link
+            href="/restaurants"
+            className="lg:hidden flex items-center rounded-full border border-border bg-card p-2 text-muted-foreground hover:border-emerald/40 transition-colors"
+            aria-label="Search">
+            <FiSearch className="h-5 w-5" />
           </Link>
 
           <button

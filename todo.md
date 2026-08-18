@@ -1,10 +1,11 @@
-# Fix Broken Images in Food Delivery App
+# Fix Restaurant Images & Mobile Search Bar
 
-Root cause identified: /manus-storage/ paths proxy to the SOURCE project's CloudFront storage, which returns 403 Access Denied in this copy (unrecoverable; images not in Git repo, Vercel deploys also return 410/404). Generation quota exhausted for today, so fix uses curated Unsplash images (permanent direct URLs, no re-upload needed) matched to each dish/category.
-
-- [ ] Obtain image assets via curated Unsplash URLs (12 photos + logo)
-- [ ] Create a simple inline SVG leaf logo as Logo component (no generation possible)
-- [ ] Update data files (categories.js, foods.js, restaurants.js) with new URLs
-- [ ] Update components (Navbar.jsx, Footer.jsx) and Home.jsx with new URLs
-- [ ] Verify images load on Home, Restaurant List, Restaurant Details, Food Details, Cart
-- [ ] Save checkpoint and deliver fixed project
+- [ ] Diagnose which restaurant/food image filenames are referenced vs. what exists in client/public/images
+- [ ] Identify any /manus-storage leftover or wrong filenames in restaurants.js, foods.js, categories, Home.jsx
+- [ ] Add missing image files so every restaurant and food card has a working static image
+- [ ] Fix mobile search bar icon/symbol in Navbar responsive styles
+- [ ] Rebuild locally, verify dist/public contains all images
+- [ ] Commit and push to GitHub (Vercel auto-deploys)
+- [ ] Verify production URLs serve all images (HTTP 200, real JPEGs)
+- [ ] Visual check desktop + mobile on production site
+- [ ] Save checkpoint and report to user
