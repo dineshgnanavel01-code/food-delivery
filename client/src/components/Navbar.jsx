@@ -4,9 +4,17 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { FiMapPin, FiSearch, FiShoppingCart, FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
+import { FiMapPin, FiShoppingCart, FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
 import { useCart } from "../context/CartContext";
 import { useTheme } from "../contexts/ThemeContext";
+
+// Plain inline magnifier SVG (no icon library dependency — guaranteed to render on Vercel builds).
+const SearchIcon = ({ className = "" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="10.5" cy="10.5" r="6.5" />
+    <path d="M20 20l-4.6-4.6" />
+  </svg>
+);
 
 // Inline brand mark: emerald bowl with a papaya accent (new Dina Food logo — different from the old leaf).
 const LOGO_MARK = (
@@ -133,16 +141,16 @@ export default function Navbar() {
             href="/restaurants"
             className="hidden lg:flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-2 text-sm text-muted-foreground hover:border-emerald/40 transition-colors"
             aria-label="Search food and restaurants">
-            <FiSearch className="h-4 w-4 text-emerald" />
+            <SearchIcon className="h-4 w-4 text-emerald shrink-0" />
             <span className="hidden xl:inline">Search food & restaurants…</span>
           </Link>
 
           {/* Compact search icon for small screens (between desktop pill and theme toggle) */}
           <Link
             href="/restaurants"
-            className="lg:hidden flex items-center rounded-full border border-emerald/40 bg-emerald p-2 text-white shadow-sm hover:bg-emerald/90 active:scale-[0.95] transition-all"
+            className="lg:hidden flex items-center justify-center rounded-full border border-emerald/40 bg-emerald p-2 text-white shadow-sm hover:bg-emerald/90 active:scale-[0.95] transition-all"
             aria-label="Search">
-            <FiSearch className="h-5 w-5" />
+            <SearchIcon className="h-5 w-5 shrink-0" />
           </Link>
 
           <button

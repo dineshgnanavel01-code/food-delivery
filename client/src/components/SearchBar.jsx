@@ -2,7 +2,13 @@
  * DINA FOOD — "Emerald Harvest" SearchBar
  * Pill-shaped search input with emerald icon.
  */
-import { FiSearch } from "react-icons/fi";
+// Plain inline magnifier SVG (no icon library dependency — guaranteed to render on Vercel builds).
+const SearchIcon = ({ className = "" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="10.5" cy="10.5" r="6.5" />
+    <path d="M20 20l-4.6-4.6" />
+  </svg>
+);
 
 export default function SearchBar({
   value,
@@ -12,7 +18,7 @@ export default function SearchBar({
 }) {
   return (
     <div className={`relative w-full max-w-xl ${className}`}>
-      <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 h-4.5 w-4.5 text-emerald" />
+      <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 h-4.5 w-4.5 text-emerald" />
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
