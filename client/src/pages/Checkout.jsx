@@ -19,7 +19,7 @@ const PAYMENT_METHODS = [
 ];
 
 function genOrderId() {
-  return `HV-${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 900 + 100)}`;
+  return `DIN-${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 900 + 100)}`;
 }
 
 export default function Checkout() {

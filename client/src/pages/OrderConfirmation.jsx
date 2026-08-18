@@ -161,9 +161,9 @@ export default function OrderConfirmation() {
               Back to Home
             </Link>
             <Link
-              href="/restaurants"
+              href="/order-confirmation"
               className="flex-1 rounded-full border border-emerald/40 px-6 py-3.5 text-center text-sm font-semibold text-emerald transition-colors hover:bg-emerald hover:text-white">
-              Order more <FiArrowRight className="ml-1 inline h-4 w-4" />
+              Track Order <FiMapPin className="ml-1 inline h-4 w-4" />
             </Link>
           </div>
         </div>
