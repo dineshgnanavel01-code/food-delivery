@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" App shell
+ * DINA FOOD — "Emerald Harvest" App shell
  * Emerald + papaya palette, Sora display / Inter body.
  * All pages wrapped in CartProvider; Navbar/Footer shared layout.
  */

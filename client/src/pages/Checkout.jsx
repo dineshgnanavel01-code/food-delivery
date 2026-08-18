@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" Checkout
+ * DINA FOOD — "Emerald Harvest" Checkout
  * Delivery address, contact info, payment method UI, promo code,
  * price breakdown, place order with validation.
  */
@@ -213,7 +213,7 @@ export default function Checkout() {
                 <input
                   value={promoInput}
                   onChange={(e) => setPromoInput(e.target.value)}
-                  placeholder="HARVEAT10"
+                  placeholder="DINA10"
                   disabled={!!promoCode}
                   className={`flex-1 rounded-full border bg-background px-4 py-2.5 text-sm outline-none focus:border-emerald/60 disabled:opacity-60 ${
                     promoCode ? "border-emerald/40" : "border-border"

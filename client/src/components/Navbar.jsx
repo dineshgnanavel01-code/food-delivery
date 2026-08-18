@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" fresh market style
+ * DINA FOOD — "Emerald Harvest" fresh market style
  * Navbar: sticky, emerald wordmark, location pill, search, cart badge bounce.
  */
 import { useEffect, useState } from "react";
@@ -8,20 +8,26 @@ import { FiMapPin, FiSearch, FiShoppingCart, FiMenu, FiX, FiSun, FiMoon } from "
 import { useCart } from "../context/CartContext";
 import { useTheme } from "../contexts/ThemeContext";
 
-// Inline brand mark: emerald leaf with papaya fruit accent (replaces external logo asset).
+// Inline brand mark: emerald bowl with a papaya accent (new Dina Food logo — different from the old leaf).
 const LOGO_MARK = (
   <svg viewBox="0 0 40 40" className="h-9 w-9" aria-hidden="true">
+    {/* bowl */}
     <path
-      d="M20 4C10 6 5 14 5 23c0 7 5 13 15 13s15-6 15-13C35 12 28 5 20 4z"
+      d="M6 16h28c0 9-6.3 16-14 16S6 25 6 16z"
       fill="oklch(0.47 0.1 165)"
     />
+    {/* bowl rim */}
     <path
-      d="M20 10c-5 1.5-8 6-8.5 11.5 2.5-3 5.5-4.5 8.5-4.5 3 0 6 1.5 8.5 4.5C28 16 25 11.5 20 10z"
-      fill="oklch(0.68 0.09 165)"
+      d="M4 16h32"
+      stroke="oklch(0.47 0.1 165)"
+      strokeWidth="3.5"
+      strokeLinecap="round"
     />
-    <path d="M20 12v21" stroke="oklch(0.97 0.005 100)" strokeWidth="2.2" strokeLinecap="round" />
-    <path d="M20 17l-4 3.5M20 21l3.5 3M20 25l-3 2.5" stroke="oklch(0.97 0.005 100)" strokeWidth="1.8" strokeLinecap="round" />
-    <circle cx="30" cy="9" r="5" fill="oklch(0.72 0.19 45)" />
+    {/* steam */}
+    <path d="M13 9c1.5-2.5 0.5-5 0.5-5M20 7c1.5-2.5 0.5-5 0.5-5M27 9c1.5-2.5 0.5-5 0.5-5"
+      stroke="oklch(0.68 0.09 165)" strokeWidth="2.4" strokeLinecap="round" fill="none" />
+    {/* papaya accent dot */}
+    <circle cx="30" cy="9" r="4.5" fill="oklch(0.72 0.19 45)" />
   </svg>
 );
 
@@ -70,9 +76,9 @@ export default function Navbar() {
         {/* Wordmark */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           {LOGO_MARK}
-          <span className="sr-only">Harveat logo</span>
+          <span className="sr-only">Dina Food logo</span>
           <span className="font-display text-2xl font-extrabold text-foreground tracking-tight">
-            Harveat
+            Dina Food
           </span>
         </Link>
 
@@ -134,7 +140,7 @@ export default function Navbar() {
           {/* Compact search icon for small screens (between desktop pill and theme toggle) */}
           <Link
             href="/restaurants"
-            className="lg:hidden flex items-center rounded-full border border-border bg-card p-2 text-muted-foreground hover:border-emerald/40 transition-colors"
+            className="lg:hidden flex items-center rounded-full border border-emerald/40 bg-emerald p-2 text-white shadow-sm hover:bg-emerald/90 active:scale-[0.95] transition-all"
             aria-label="Search">
             <FiSearch className="h-5 w-5" />
           </Link>

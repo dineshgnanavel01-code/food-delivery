@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" CartItem
+ * DINA FOOD — "Emerald Harvest" CartItem
  * Photo thumbnail, name, quantity controls, price, remove button.
  */
 import { FiMinus, FiPlus, FiTrash2 } from "react-icons/fi";

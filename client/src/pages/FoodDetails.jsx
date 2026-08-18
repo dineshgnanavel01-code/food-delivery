@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" FoodDetails
+ * DINA FOOD — "Emerald Harvest" FoodDetails
  * Large food photo, full description, veg badge, rating, quantity controls,
  * related dishes from the same restaurant.
  */

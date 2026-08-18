@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" fresh market style
+ * DINA FOOD — "Emerald Harvest" fresh market style
  * Restaurant data for the food delivery UI kit.
  */
 export const restaurants = [

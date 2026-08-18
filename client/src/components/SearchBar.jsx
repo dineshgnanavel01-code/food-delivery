@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" SearchBar
+ * DINA FOOD — "Emerald Harvest" SearchBar
  * Pill-shaped search input with emerald icon.
  */
 import { FiSearch } from "react-icons/fi";

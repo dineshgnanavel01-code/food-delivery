@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" FoodCard
+ * DINA FOOD — "Emerald Harvest" FoodCard
  * Veg/Non-veg square indicator, popular sticker, wishlist heart,
  * price in papaya, add-to-cart or inline quantity controls.
  */

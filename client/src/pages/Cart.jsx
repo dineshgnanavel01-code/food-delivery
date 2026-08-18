@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" Cart page
+ * DINA FOOD — "Emerald Harvest" Cart page
  * CartItem rows, empty state, order summary, proceed to checkout.
  */
 import { Link } from "wouter";

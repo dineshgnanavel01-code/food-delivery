@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" RestaurantDetails
+ * DINA FOOD — "Emerald Harvest" RestaurantDetails
  * Hero banner, info card with rating/reviews/delivery, menu sections, food cards.
  */
 import { useMemo, useState } from "react";

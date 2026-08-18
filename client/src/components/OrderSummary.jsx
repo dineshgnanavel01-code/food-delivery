@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" OrderSummary
+ * DINA FOOD — "Emerald Harvest" OrderSummary
  * Receipt-style breakdown: items, promo, subtotal, delivery, tax, discount, total.
  */
 import { useState } from "react";
@@ -105,7 +105,7 @@ export default function OrderSummary({ checkout = false }) {
 
       {checkout && (
         <p className="mt-3 text-xs text-muted-foreground">
-          Hint: try promo code <strong>HARVEAT10</strong> or <strong>FREEDELIVERY</strong>
+          Hint: try promo code <strong>DINA10</strong> or <strong>FREEDELIVERY</strong>
         </p>
       )}
     </aside>

@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" OrderConfirmation
+ * DINA FOOD — "Emerald Harvest" OrderConfirmation
  * Success message, order ID, estimated delivery time, ordered items,
  * total, order tracking UI, back to home.
  */
@@ -72,7 +72,7 @@ export default function OrderConfirmation() {
               Order placed — deliciousness incoming!
             </h1>
             <p className="text-muted-foreground">
-              Thanks for ordering with Harveat. Your food is being prepared with care.
+              Thanks for ordering with Dina Food. Your food is being prepared with care.
             </p>
           </div>
 

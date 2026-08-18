@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" RestaurantCard
+ * DINA FOOD — "Emerald Harvest" RestaurantCard
  * Polaroid lift, sticker offer badge, favorite heart, delivery info strip.
  */
 import { Link } from "wouter";

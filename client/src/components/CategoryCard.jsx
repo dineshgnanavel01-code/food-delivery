@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" CategoryCard
+ * DINA FOOD — "Emerald Harvest" CategoryCard
  * Market-stall card: photo, emoji sticker, emerald ring when active.
  */
 

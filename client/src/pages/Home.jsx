@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" Home
+ * DINA FOOD — "Emerald Harvest" Home
  * Asymmetric hero, category stalls, popular restaurants, recommended dishes,
  * promo ticket band, live cart peek.
  */
@@ -100,7 +100,7 @@ export default function Home() {
                   This week's recipe: save 10%
                 </h2>
                 <p className="text-sm text-[oklch(0.42_0.05_150)]">
-                  Use code <strong>HARVEAT10</strong> at checkout — or{" "}
+                  Use code <strong>DINA10</strong> at checkout — or{" "}
                   <strong>FREEDELIVERY</strong> for waived delivery fees.
                 </p>
               </div>

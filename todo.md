@@ -1,11 +1,16 @@
-# Fix Restaurant Images & Mobile Search Bar
+# Dina Food Rebrand + Mobile Search Icon
 
-- [ ] Diagnose which restaurant/food image filenames are referenced vs. what exists in client/public/images
-- [ ] Identify any /manus-storage leftover or wrong filenames in restaurants.js, foods.js, categories, Home.jsx
-- [ ] Add missing image files so every restaurant and food card has a working static image
-- [ ] Fix mobile search bar icon/symbol in Navbar responsive styles
-- [ ] Rebuild locally, verify dist/public contains all images
-- [ ] Commit and push to GitHub (Vercel auto-deploys)
-- [ ] Verify production URLs serve all images (HTTP 200, real JPEGs)
-- [ ] Visual check desktop + mobile on production site
-- [ ] Save checkpoint and report to user
+## Rebrand Harveat → Dina Food
+- [ ] Replace "Harveat" name with "Dina Food" in Navbar and Footer
+- [ ] Design a new logo mark (different from the current leaf) in brand colors (emerald/orange on cream)
+- [ ] Update index.html title, meta description, and favicon to Dina Food
+- [ ] Check remaining "Harveat" mentions in pages/data and update branding (promo code can stay)
+
+## Mobile search bar symbol
+- [ ] Review current mobile navbar icons (screenshot showed an empty pill + moon + cart + hamburger)
+- [ ] Ensure mobile shows a proper magnifier search icon button next to cart (compact, emerald styling)
+
+## Verify & deploy
+- [ ] Screenshot desktop + mobile to confirm rebrand and icons
+- [ ] Save checkpoint and push to GitHub (github remote)
+- [ ] Verify Vercel production URLs return 200 with new branding

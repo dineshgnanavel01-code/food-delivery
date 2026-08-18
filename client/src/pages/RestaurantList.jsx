@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" RestaurantList
+ * DINA FOOD — "Emerald Harvest" RestaurantList
  * Search + category filter chips + sort + restaurant cards grid + empty state.
  */
 import { useMemo, useState } from "react";

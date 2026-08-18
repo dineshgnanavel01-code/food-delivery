@@ -1,5 +1,5 @@
 /*
- * HARVEAT — "Emerald Harvest" fresh market style
+ * DINA FOOD — "Emerald Harvest" fresh market style
  * Cart + favorites + wishlist context with localStorage persistence.
  */
 import { createContext, useContext, useEffect, useState, useMemo, useCallback } from "react";
@@ -104,9 +104,9 @@ export function CartProvider({ children }) {
   const applyPromo = useCallback(
     (code) => {
       const upper = code.trim().toUpperCase();
-      if (upper === "HARVEAT10") {
+      if (upper === "DINA10") {
         setPromo({ code: upper, type: "percent", value: 0.1 });
-        showToast("Promo HARVEAT10 applied — 10% off!", "success");
+        showToast("Promo DINA10 applied — 10% off!", "success");
         return true;
       }
       if (upper === "FREEDELIVERY") {
@@ -115,7 +115,7 @@ export function CartProvider({ children }) {
         return true;
       }
       setPromo(null);
-      showToast("Invalid promo code. Try HARVEAT10", "error");
+      showToast("Invalid promo code. Try DINA10", "error");
       return false;
     },
     [showToast],
