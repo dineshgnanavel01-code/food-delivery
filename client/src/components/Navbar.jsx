@@ -4,8 +4,9 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { FiMapPin, FiSearch, FiShoppingCart, FiHeart, FiMenu, FiX } from "react-icons/fi";
+import { FiMapPin, FiSearch, FiShoppingCart, FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
 import { useCart } from "../context/CartContext";
+import { useTheme } from "../contexts/ThemeContext";
 
 const LOGO = "/manus-storage/harveat-logo_216afe8f.png";
 
@@ -20,6 +21,7 @@ export default function Navbar() {
   const [selectedLocation, setSelectedLocation] = useState("Downtown");
   const [bounce, setBounce] = useState(false);
   const [prevCount, setPrevCount] = useState(count);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -112,6 +114,17 @@ export default function Navbar() {
             <FiSearch className="h-4 w-4 text-emerald" />
             <span className="hidden xl:inline">Search food & restaurants…</span>
           </Link>
+
+          <button
+            onClick={toggleTheme}
+            className="p-2.5 rounded-full hover:bg-secondary transition-colors"
+            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}>
+            {theme === "light" ? (
+              <FiMoon className="h-5 w-5" />
+            ) : (
+              <FiSun className="h-5 w-5 text-butter" />
+            )}
+          </button>
 
           <Link href="/cart" className="relative p-2.5 rounded-full hover:bg-secondary transition-colors">
             <FiShoppingCart className="h-5 w-5" />
