@@ -148,7 +148,7 @@ export default function Navbar() {
           {/* Compact search icon for small screens (between desktop pill and theme toggle) */}
           <Link
             href="/restaurants"
-            className="lg:hidden flex items-center justify-center rounded-full border border-emerald/40 bg-emerald p-2 text-white shadow-sm hover:bg-emerald/90 active:scale-[0.95] transition-all"
+            className="lg:hidden p-2.5 rounded-full text-foreground hover:bg-secondary transition-colors"
             aria-label="Search">
             <SearchIcon className="h-5 w-5 shrink-0" />
           </Link>
