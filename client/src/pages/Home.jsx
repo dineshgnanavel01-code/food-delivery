@@ -78,12 +78,12 @@ export default function Home() {
 
           <div className="relative hidden lg:block">
             <img
-              src="/manus-storage/hero-market-hero_d9d84655.png"
+              src="/manus-storage/harveat-hero-bowl_95a518ce.jpg"
               alt="Fresh harvest grain bowl with avocado and juice"
               className="polaroid w-full rotate-[1.5deg] object-cover"
             />
             <img
-              src="/manus-storage/hero-salad-top_b4bddf1b.png"
+              src="/manus-storage/harveat-salad-top_3846082e.jpg"
               alt="Fresh garden salad flat lay"
               className="polaroid absolute -bottom-8 -left-10 w-56 rotate-[-4deg] object-cover"
             />
